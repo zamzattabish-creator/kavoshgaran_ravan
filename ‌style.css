@@ -1,0 +1,105 @@
+/* Reset ساده */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Vazir', Tahoma, sans-serif;
+  direction: rtl;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.8;
+}
+
+/* هدر و ناوبری */
+header {
+  background: linear-gradient(90deg, #4b79a1, #283e51);
+  color: #fff;
+  padding: 25px 0;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: #ffd700;
+}
+
+/* محتوای اصلی */
+main {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* بلاگ / مقالات */
+.blog-list, .articles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.blog-post, .article-item {
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.blog-post:hover, .article-item:hover {
+  transform: translateY(-5px);
+}
+
+.blog-post h2, .article-item h2 {
+  color: #4b79a1;
+  margin-bottom: 18px;
+  font-size: 26px;
+}
+
+.blog-post p, .article-item p {
+  margin-bottom: 14px;
+  font-size: 17px;
+}
+
+h3 {
+  margin-top: 18px;
+  color: #ff6f61;
+  font-size: 20px;
+}
+
+/* لینک ادامه مطلب */
+a {
+  text-decoration: none;
+  color: #4b79a1;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff6f61;
+}
+
+/* فوتر */
+footer {
+  background-color: #283e51;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 14px;
+}
